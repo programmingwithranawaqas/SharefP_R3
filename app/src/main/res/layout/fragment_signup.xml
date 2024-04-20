@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignupFrag">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter the username"
+            android:id="@+id/etUsername"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter the password"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirm Password"
+            android:id="@+id/etCPassword"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/red"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Signup"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignup"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a user?"
+        android:gravity="right"
+        android:textColor="@color/b"
+        android:id="@+id/tvLogin"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

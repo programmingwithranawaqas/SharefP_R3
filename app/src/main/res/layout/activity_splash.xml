@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#111222"
+        android:gravity="right"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:background="@color/a"
+            android:id="@+id/first"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:background="@color/b"
+            android:id="@+id/second"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:background="@color/c"
+            android:id="@+id/third"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="110dp"
+            android:background="@color/a"
+            android:id="@+id/fourth"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="150dp"
+            android:background="@color/red"
+            android:id="@+id/fifth"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:id="@+id/sixth"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#111331"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:id="@+id/ivLogo"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111123"
+        android:gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slogan"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvSlogan"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
